@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "firebase": "^5.0.3",
+    "moment": "^2.22.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuefire": "^1.4.5"
