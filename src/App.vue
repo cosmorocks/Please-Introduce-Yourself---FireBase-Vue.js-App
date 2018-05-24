@@ -18,6 +18,15 @@
       <hr/>
 
       <div class="card-columns">
+        <div class="card card-outline-sucess">
+          <div class="card-block">
+            <h5 class="card-title">Hello!</h5>
+            <p class="card-text">This is our fixed card!</p>
+            <p class="card-text"><small class="text-muted">
+              Added on {{ dateToString(Date.now()) }}</small></p>
+          </div>
+        </div>
+      </div>
         <div class="card" v-for="message in messages">
           <div class="card-block">
             <h5 class="card-title"> {{message.title}} </h5>
@@ -33,7 +42,9 @@
 
 <script>
   import Firebase from 'firebase'
+  import { reverse } from './utils/utils'
   import { dateToString } from './utils/utils'
+
   // Initialize Firebase
   let config = {
     apiKey: "AIzaSyAUwhsDODsFsc5Oi694aqihlBFCTUoASXI",

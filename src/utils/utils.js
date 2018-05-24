@@ -7,4 +7,8 @@ function dateToString (date) {
     return''
 }
 
+function reverse (array){
+    array.slice().reverse();
+}
+
 export{ dateToString }
