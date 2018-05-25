@@ -1,21 +1,11 @@
 # please-introduce-yoself
 
-> Project made following the guide in the book \"Vue.js 2 and Bootstrap 4 Web Development\"
+> A project made following the guide in the book \"Vue.js 2 and Bootstrap 4 Web Development\" by Olga Filipova
 
-## Build Setup
+## What does it do?
 
-``` bash
-# install dependencies
-npm install
+Single page web application that displays the comments from whoever submits them. Built using firebase and vue.js.
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+Coded by Matthew Han.
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
