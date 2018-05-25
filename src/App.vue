@@ -66,9 +66,9 @@
           timestamp:null
         },
         firstMessage:{
-          title: 'My static message',
-          text: 'so static like wow',
-          timestamp: 8319231
+          title: 'Made by following the book "Vue.js 2 and Bootstrap4 Web Development" by Olga Filipova',
+          text: 'Coded by: Matthew Han',
+          timestamp: 129031
         }
       }
     },
