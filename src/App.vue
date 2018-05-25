@@ -16,34 +16,33 @@
       </form>
 
       <hr/>
-
-      <div class="card-columns">
-        <div class="card card-outline-sucess">
-          <div class="card-block">
-            <h5 class="card-title">Hello!</h5>
-            <p class="card-text">This is our fixed card!</p>
-            <p class="card-text"><small class="text-muted">
-              Added on {{ dateToString(Date.now()) }}</small></p>
-          </div>
+  
+      <template>
+        <div class="card-columns">
+          <card class="border-success">
+            <data v-bind:title="'Hello!'" v-bind:text="'This is our fixed card!'" v-bind:footer="'Added on ' + dateToString(Date.now())">
+            </data>
+          </card>
         </div>
-      </div>
-        <div class="card" v-for="message in messages">
-          <div class="card-block">
-            <h5 class="card-title"> {{message.title}} </h5>
-            <p class="card-text"> {{ message.text }} </p>
-            <p class="card-text"><small class="text-muted"> Added on {{ dateToString(message.timestamp) }} </small> </p>
-          </div>
-        </div>
-      </div>
+      </template>
+      <!-- ////////// -->
+      <!--
+      <div class = "card-columns">
+        <card v-for="message in messages" v-bind:title="message.title" v-bind:text="message.text" v-bind:footer="'Added on ' + dateToString(message.timestamp)">
+          <data v-bind:title="message.title"></data>
+        </card>
+      </div> -->
+      </div> 
 
     </div>
-  </div>
 </template>
 
 <script>
   import Firebase from 'firebase'
   import { reverse } from './utils/utils'
   import { dateToString } from './utils/utils'
+  import Card from './components/Card'
+  import Data from './components/Data'
 
   // Initialize Firebase
   let config = {
@@ -86,6 +85,10 @@
         this.newMessage.timestamp = null
       },
       dateToString
+    },
+    components: {
+      Card,
+      Data
     }
   }
 </script>
