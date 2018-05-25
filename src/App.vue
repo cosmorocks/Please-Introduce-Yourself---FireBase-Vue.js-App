@@ -1,9 +1,8 @@
 <template>
   <div id="app" class="jumbotron">
     <div class = "container">
-      <h1>Hello! Nice to meet you! </h1>
+      <h1>Hello! Nice to meet you! <img src="../pizzaparrot.gif"> </h1>
       <hr />
-      
       <form @submit="addMessage">
         <div class="form-group">
           <input class="form-control" v-model="newMessage.title" maxlength="40" autofocus placeholder="Please introduce yourself :)"/>
