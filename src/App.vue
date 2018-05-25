@@ -19,19 +19,15 @@
   
       <template>
         <div class="card-columns">
-          <card class="border-success">
-            <data v-bind:title="'Hello!'" v-bind:text="'This is our fixed card!'" v-bind:footer="'Added on ' + dateToString(Date.now())">
-            </data>
+          <card class="border-success" v-bind:message = "firstMessage">
           </card>
         </div>
       </template>
-      <!-- ////////// -->
-      <!--
+
       <div class = "card-columns">
-        <card v-for="message in messages" v-bind:title="message.title" v-bind:text="message.text" v-bind:footer="'Added on ' + dateToString(message.timestamp)">
-          <data v-bind:title="message.title"></data>
-        </card>
-      </div> -->
+          <card v-for="message in messages" v-bind:message = "message">
+          </card>
+      </div> 
       </div> 
 
     </div>
@@ -42,7 +38,6 @@
   import { reverse } from './utils/utils'
   import { dateToString } from './utils/utils'
   import Card from './components/Card'
-  import Data from './components/Data'
 
   // Initialize Firebase
   let config = {
@@ -69,6 +64,11 @@
           title:'',
           text:'',
           timestamp:null
+        },
+        firstMessage:{
+          title: 'My static message',
+          text: 'so static like wow',
+          timestamp: 8319231
         }
       }
     },
@@ -88,7 +88,6 @@
     },
     components: {
       Card,
-      Data
     }
   }
 </script>
