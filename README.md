@@ -8,4 +8,6 @@ Single page web application that displays the comments from whoever submits them
 
 Coded by Matthew Han.
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Visit the site here: https://pleaseintroduceyoself.firebaseapp.com/#/
+
+Learn more about Vue.js here: https://vuejs.org/

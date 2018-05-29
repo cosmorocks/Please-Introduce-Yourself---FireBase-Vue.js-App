@@ -27,9 +27,8 @@
           <card v-for="message in messages" v-bind:message = "message">
           </card>
       </div> 
-      </div> 
-
-    </div>
+    </div> 
+  </div>
 </template>
 
 <script>
